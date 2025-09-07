@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Buddy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main">
+    <!-- Navbar -->
+    <div class="navbar"> 
+      <div class="pic"></div>
+      <h1><b> Study Buddy: A Study Partner</b> </h1>
+      <div class="quote-container">
+        <p class="quote" id="quote">Progress, not perfection.</p>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2 class="logo">StudyBuddy <i class="fa-solid fa-lightbulb"></i></h2>
+
+      <div class="menu-item">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <div class="submenu">
+          <a href="index.html">Dashboard</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <a href="promodoro.html"><i class="fa-solid fa-clock"></i> Pomodoro</a>
+        <div class="submenu">
+          <a href="promodoro.html">Start Timer</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <a href="chatbot.html"><i class="fa-solid fa-robot"></i> Chatbot</a>
+        <div class="submenu">
+          <a href="chatbot.html">AI Chat</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <a href="todo.html"><i class="fa-solid fa-rectangle-list"></i> To-Do List</a>
+        <div class="submenu">
+          <a href="todo.html">Tasks</a>
+          <a href="todo.html">Completed</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <a href="mentalhealth.html"><i class="fa-solid fa-notes-medical"></i> Mental Health</a>
+        <div class="submenu">
+          <a href="mentalhealth.html">Meditation</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div id="dashboard" class="content-section active">
+      <div class="welcome-card">
+        <h2>Welcome back! ✨</h2>
+        <p>Let’s make today productive.</p>
+      </div>
+
+      <div class="stats">
+        <div class="card">
+          <h3>Tasks Today</h3>
+          <p><strong>2/4</strong></p>
+          <div class="progress">
+            <div class="bar"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Pomodoro Streak</h3>
+          <p><strong>7 days</strong></p>
+        </div>
+
+        <div class="card">
+          <h3>Mood Score</h3>
+          <p>😊 Great</p>
+        </div>
+      </div>
+
+      <div class="tasks-mood">
+        <div class="card">
+          <h3>Today's Tasks</h3>
+          <ul id="todoList">
+            <li><input type="checkbox" checked> Complete Math Assignment</li>
+            <li><input type="checkbox"> Review Biology Notes</li>
+            <li><input type="checkbox"> Prepare Presentation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Mood Check-In</h3>
+          <div class="emojis">😔 😐 🙂 😃 🤩</div>
+          <button class="check-btn">Complete Check-In</button>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="footer-card">
+      <p>🌟 Keep pushing forward, every small step counts!</p>
+      <div class="footer-links">
+        <a href="#">Help</a> | 
+        <a href="#">Privacy</a> | 
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
